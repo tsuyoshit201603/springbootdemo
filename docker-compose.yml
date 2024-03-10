@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: "mysql:8.3"
+    container_name: "mysql"
+    restart: "always"
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: "spring-boot-demo"
+    ports:
+      - "3306:3306"
